@@ -1,0 +1,30 @@
+LGalas Metrics pour iPhone / iPad (application web installable)
+================================================================
+
+Ce dossier n'est pas un fichier .ipa : c'est une application web (PWA) que
+l'on installe sur l'écran d'accueil depuis Safari. Elle fonctionne ensuite
+hors-ligne, en plein écran, avec son icône.
+
+ÉTAPE 1 - Mettre le dossier en ligne (HTTPS obligatoire sur iPhone)
+  Mets TOUS les fichiers de ce dossier à la racine d'un hébergement statique
+  gratuit en HTTPS, par exemple GitHub Pages, Netlify ou Cloudflare Pages.
+  Tu obtiens une adresse du type https://ton-nom.exemple/
+
+ÉTAPE 2 - Installer sur l'iPhone
+  1. Ouvre l'adresse dans SAFARI (pas dans Chrome).
+  2. Touche le bouton Partager (carré avec une flèche).
+  3. Touche « Sur l'écran d'accueil », puis « Ajouter ».
+  4. Ouvre l'appli depuis l'icône. Charge-la une première fois avec du réseau.
+
+SAUVEGARDE (important)
+  - Les données restent dans l'appli, sur ton iPhone. Installée sur l'écran
+    d'accueil, elle est mieux protégée contre l'effacement automatique de Safari.
+  - Le bouton de sauvegarde ouvre la feuille de partage : enregistre le fichier
+    JSON dans « Fichiers » ou envoie-le-toi. Fais-le chaque semaine.
+  - Pour passer d'Android à iPhone : exporte le JSON sur Android, puis
+    restaure-le sur l'iPhone avec le bouton de restauration.
+  - Les photos de progression ne sont pas dans la sauvegarde JSON.
+
+MISE À JOUR
+  Remplace les fichiers sur l'hébergement. Pour forcer le rechargement, change
+  le nom du cache dans sw.js (ligne 1 : lgalas-metrics-v1 -> v2).
